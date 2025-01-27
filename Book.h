@@ -12,7 +12,7 @@ class Book {
 private:
     std::string content;
 public:
-    Book(std::string &content_);
+    Book(std::string content_);
     ~Book();
 
     std::string getContent() const;

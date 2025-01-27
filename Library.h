@@ -4,6 +4,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include "Book.h"
 
 #ifndef LIBRARY_SYSTEM_LIBRARY_H
 #define LIBRARY_SYSTEM_LIBRARY_H
@@ -11,12 +12,18 @@
 
 class Library {
 private:
-    std::vector<std::string> books;
+    std::vector<Book> books;
 public:
-    Library(std::vector<std::string> &books_);
+    Library(std::vector<Book> &books_);
+
+    Library(){
+        books.reserve(100);
+    }
     ~Library();
 
-    std::vector<std::string> getBooks() const;
+    std::vector<Book> getBooks() const;
+
+    void addBook(Book &newBook);
 
 };
 

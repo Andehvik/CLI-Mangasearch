@@ -4,8 +4,9 @@
 
 #include "Book.h"
 #include <iostream>
+#include <utility>
 
-Book::Book(std::string &content_): content(content_) {}
+Book::Book(std::string content_): content(std::move(content_)) {}
 
 Book::~Book() = default;
 
