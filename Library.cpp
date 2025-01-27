@@ -6,10 +6,14 @@
 #include <iostream>
 #include <vector>
 
-Library::Library(std::vector<std::string> &books_): books(books_) {}
+Library::Library(std::vector<Book> &books_): books(books_) {}
 
 Library::~Library() = default;
 
-std::vector<std::string> Library::getBooks() const{
+std::vector<Book> Library::getBooks() const{
     return books;
+}
+
+void Library::addBook(Book &newBook) {
+    books.emplace_back(newBook);
 }

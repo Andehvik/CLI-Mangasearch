@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Library.h"
+#include "Book.h"
 
 
 // This project centers around creating management software for a library using C++.
@@ -21,13 +22,14 @@
 
 int main(){
 
-    std::vector<std::string> books;
+    Book book("Hero of the Storm");
+    //books.emplace_back("Hero of the Storm");
 
-    books.emplace_back("Hero of the Storm");
+    Library library;
+    library.addBook(book);
 
-    Library library(books);
 
-    std::cout << library.getBooks().at(0) << '\n';
+    std::cout << library.getBooks().at(0).getContent() << '\n';
 
 
     return 0;
