@@ -23,7 +23,6 @@
 int main(){
 
     Book book("Hero of the Storm");
-    //books.emplace_back("Hero of the Storm");
 
     Library library;
     library.addBook(book);

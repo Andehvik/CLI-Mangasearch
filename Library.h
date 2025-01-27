@@ -16,9 +16,8 @@ private:
 public:
     Library(std::vector<Book> &books_);
 
-    Library(){
-        books.reserve(100);
-    }
+    Library();
+
     ~Library();
 
     std::vector<Book> getBooks() const;

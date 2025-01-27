@@ -8,6 +8,10 @@
 
 Library::Library(std::vector<Book> &books_): books(books_) {}
 
+Library::Library(){
+    books.reserve(100);
+}
+
 Library::~Library() = default;
 
 std::vector<Book> Library::getBooks() const{
