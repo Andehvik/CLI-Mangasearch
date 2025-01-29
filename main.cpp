@@ -18,6 +18,9 @@
 //Use python to scrape titles, genre, URL??? etc. and send it through a JSON-file or a txt-file
 // depending on what is the best.
 
+//Use Docker Compose instead of having all in one file
+
+
 
 
 int main(){
