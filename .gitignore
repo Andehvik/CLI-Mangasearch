@@ -33,3 +33,5 @@
 
 .github/
 cmake-build-debug/
+
+src/python_scripts/.venv/
