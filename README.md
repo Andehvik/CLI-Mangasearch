@@ -1,6 +1,6 @@
-# Foobar
+# CLI Mangasearch
 
-Foobar is a Python library for dealing with word pluralization.
+CLI Mangasearch is a command-line interface that helps to search manga, manwha and manhua online.
 
 ## Installation
 
