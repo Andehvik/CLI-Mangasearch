@@ -6,8 +6,8 @@ name(name),
 description(description),
 rating(rating){}
 
-manga manga::get_manga() const{
-	return *this;
+std::string manga::get_name() const{
+	return name;
 }
 
 void manga::rename_name(std::string new_name){

@@ -8,7 +8,7 @@ public:
 
 	manga(std::string name, std::string description, int rating);
 
-	manga get_manga() const;
+	std::string get_name() const;
 
 	void rename_name(std::string new_name);
 private:
