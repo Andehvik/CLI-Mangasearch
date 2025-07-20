@@ -17,7 +17,6 @@ include_directories (${PROJECT_SOURCE_DIR}/${INCL_DIR})
 set (SOURCE
 ${SRC_DIR}/main.cpp
 ${SRC_DIR}/manga.cpp
-        src/shelf.cpp
 
 )
 
