@@ -1,15 +1,19 @@
 #include "manga.h"
 #include <string>
 
-manga::manga(std::string name, std::string description, int rating) :
-name(name),
-description(description),
-rating(rating){}
+manga::manga(const std::string &name, const std::string &description, int rating) :
+m_name(name),
+m_description(description),
+m_rating(rating){}
 
 std::string manga::get_name() const{
-	return name;
+	return m_name;
 }
 
-void manga::rename_name(std::string new_name){
-	this->name = new_name;
+void manga::rename_name(std::string &new_name){
+	this->m_name = new_name;
+}
+
+void manga::set_rating(int new_rating) {
+	this->m_rating = new_rating;
 }
