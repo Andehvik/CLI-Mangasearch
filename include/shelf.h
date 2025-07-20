@@ -10,9 +10,9 @@ public:
 
 	shelf(std::string letter, std::vector<manga> books);
 
-	std::string get_books() const;
+	std::vector<manga> get_books() const;
 
-	void set_letter(std::string letter);
+	void set_letter(const std::string &letter);
 
 	std::string get_letter() const;
 	
